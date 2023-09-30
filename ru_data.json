@@ -4,30 +4,30 @@
             "title": "Ib",
             "engine": "2003",
             "version": "1.07",
-            "game_info": "<a href=\"https://kouri.kuchinawa.com/game_01.html\">Об игре</a>",
+            "game_info": "https://kouri.kuchinawa.com/game_01.html",
             "foreign_localization": [
                 {
                     "translator": "vgperson",
-                    "link": "<a href=\"https://www.vgperson.com/games/ib.htm\">Ссылка</a>"
+                    "link": "https://www.vgperson.com/games/ib.htm"
                 }
             ],
             "russian_localization": [
                 {
                     "translator": "LivingFLCL",
-                    "link": "<a href=\"https://livingflcl.evanotend.com/games/ib.html\">Ссылка</a>"
+                    "link": "https://livingflcl.evanotend.com/games/ib.html"
                 }
             ],
             "union_link": {
-                "link": "<a href=\"https://rpgmakerunion.ru/game/ib.16634946\">Union</a>",
+                "link": "https://rpgmakerunion.ru/game/ib.16634946",
                 "type": "Играть онлайн"
             },
             "download_links": [
                 {
-                    "link": "<a href=\"https://yadi.sk/d/TV06hIONKuKk4w\">Yandex Disk</a>",
+                    "link": "https://yadi.sk/d/TV06hIONKuKk4w",
                     "type": "Скачать YD"
                 },
                 {
-                    "link": "<a href=\"https://drive.google.com/file/d/1-JWff_kkdk8pQnst41R-gl2lWfjP9kIr/\">Google Drive</a>",
+                    "link": "https://drive.google.com/file/d/1-JWff_kkdk8pQnst41R-gl2lWfjP9kIr/",
                     "type": "Скачать GD"
                 }
             ],
@@ -37,17 +37,17 @@
             "title": "Ib Remake",
             "engine": "MV или MZ",
             "version": "1.09",
-            "game_info": "<a href=\"https://store.steampowered.com/app/1901370/Ib/\">Об игре</a>",
+            "game_info": "https://store.steampowered.com/app/1901370/Ib/",
             "foreign_localization": [
                 {
                     "translator": "vgperson",
-                    "link": "<a href=\"https://www.vgperson.com/games/ib.htm\">Ссылка</a>"
+                    "link": "https://www.vgperson.com/games/ib.htm"
                 }
             ],
             "russian_localization": [
                 {
                     "translator": "Menori Co.",
-                    "link": "<a href=\"https://vk.com/menori_co\">Ссылка</a>"
+                    "link": "https://vk.com/menori_co"
                 }
             ],
             "union_link": {
@@ -56,7 +56,7 @@
             },
             "download_links": [
                 {
-                    "link": "<a href=\"https://disk.yandex.ru/d/lPygJi2g0AOSqw\">Yandex Disk</a>",
+                    "link": "https://disk.yandex.ru/d/lPygJi2g0AOSqw",
                     "type": "Скачать YD"
                 }
             ],
@@ -66,35 +66,35 @@
             "title": "Yume Nikki",
             "engine": "2003",
             "version": "0.10a",
-            "game_info": "<a href=\"http://www3.nns.ne.jp/pri/tk-mto/kikiyamaHP.html\">Об игре</a>",
+            "game_info": "http://www3.nns.ne.jp/pri/tk-mto/kikiyamaHP.html",
             "foreign_localization": [
                 {
                     "translator": "Uboachan",
-                    "link": "<a href=\"https://uboachan.net\">Ссылка</a>"
+                    "link": "https://uboachan.net"
                 }
             ],
             "russian_localization": [
                 {
                     "translator": "LivingFLCL",
-                    "link": "<a href=\"https://livingflcl.eva-not-end.com/games/yume-nikki.html\">Ссылка</a>"
+                    "link": "https://livingflcl.eva-not-end.com/games/yume-nikki.html"
                 },
                 {
                     "translator": "fokifox",
-                    "link": "<a href=\"https://fokifox.ru/games/rus/yume-nikki/\">Ссылка</a>"
+                    "link": "https://fokifox.ru/games/rus/yume-nikki/"
                 }
             ],
             "union_link": {
-                "link": "<a href=\"https://rpgmakerunion.ru/game/dnevnik-snovideniy.12786538\">Играть онлайн</a>",
+                "link": "https://rpgmakerunion.ru/game/dnevnik-snovideniy.12786538",
                 "type": "Скачать перевод"
             },
             "download_links": [
                 {
                     "type": "Скачать (LivingFLCL)",
-                    "link": "<a href=\"https://disk.yandex.ru/d/zhSOXWt8CClQ4g\">Скачать YD</a>"
+                    "link": "https://disk.yandex.ru/d/zhSOXWt8CClQ4g"
                 },
                 {
                     "type": "Скачать (fokifox)",
-                    "link": "<a href=\"https://disk.yandex.ru/d/rggG9PYkEyYGXg\">Скачать YD</a>"
+                    "link": "https://disk.yandex.ru/d/rggG9PYkEyYGXg"
                 }
             ],
             "note": "Рекомендуется скачивать второй перевод."
@@ -103,27 +103,27 @@
             "title": "The Witch's House",
             "engine": "VX",
             "version": "1.09",
-            "game_info": "<a href=\"https://majonoie.karou.jp/a2.html\">Об игре</a>",
+            "game_info": "https://majonoie.karou.jp/a2.html",
             "foreign_localization": [
                 {
                     "translator": "vgperson",
-                    "link": "<a href=\"http://www.vgperson.com/games/witchhouse.htm\">Ссылка</a>"
+                    "link": "http://www.vgperson.com/games/witchhouse.htm"
                 }
             ],
             "russian_localization": [
                 {
                     "translator": "Horror Forge",
-                    "link": "<a href=\"https://livingflcl.eva-not-end.com/games/yume-nikki.html\">Ссылка</a>"
+                    "link": "https://livingflcl.eva-not-end.com/games/yume-nikki.html"
                 }
             ],
             "union_link": {
-                "link": "<a href=\"https://rpgmakerunion.ru/game/the-witchs-house.70192114\">Union</a>",
+                "link": "https://rpgmakerunion.ru/game/the-witchs-house.70192114",
                 "type": "Скачать перевод"
             },
             "download_links": [
                 {
                     "type": "Mediafire",
-                    "link": "<a href=\"https://disk.yandex.ru/d/zhSOXWt8CClQ4g\">Скачать MF</a>"
+                    "link": "https://disk.yandex.ru/d/zhSOXWt8CClQ4g"
                 }
             ],
             "note": "Русский перевод устарел, неплохо бы обновить или перевести с нуля."
