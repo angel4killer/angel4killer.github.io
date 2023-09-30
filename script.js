@@ -40,9 +40,12 @@ function generateUnionLink(unionLink) {
     }
 }
 
-// Функция для генерации ссылок на скачивание
-function generateDownloadLinks(links) {
-    return links.map(link => `<a href="${link.link}" target="_blank">${link.type}</a>`).join(', ');
+// Функция для генерации ссылок на переводчиков
+function generateLinks(links) {
+    const translatorLinks = links.map(link => `<a href="${link.link}" target="_blank">${link.translator}</a>`).join(', ');
+
+    // Используем <br> для переноса на новую строку
+    return translatorLinks.replace(/,/g, ',<br>');
 }
 
 // Добавьте слушатели событий для кнопок сортировки
