@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     <td>${game.title}</td>
                     <td>${game.engine}</td>
                     <td>${game.version}</td>
-                    <td>${game.game_info}</td>
+                    <td>${parseHTML(game.game_info)}</td>
                     <td>${generateLinks(game.foreign_localization)}</td>
                     <td>${generateLinks(game.russian_localization)}</td>
                     <td>${generateUnionLink(game.union_link)}</td>
@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Функция для генерации ссылок
 function generateLinks(links) {
-    return links.map(link => link.link).join('<br>');
+    return links.map(link => parseHTML(link.link)).join('<br>');
 }
 
 // Функция для генерации ссылки на Union
@@ -37,12 +37,19 @@ function generateUnionLink(unionLink) {
     if (unionLink.link === " — ") {
         return " — ";
     } else {
-        return unionLink.link;
+        return parseHTML(unionLink.link);
     }
 }
 
 // Функция для генерации ссылок на скачивание
 function generateDownloadLinks(links) {
-    return links.map(link => `${link.type}: ${link.link}`).join('<br>');
+    return links.map(link => `${link.type}: ${parseHTML(link.link)}`).join('<br>');
+}
+
+// Функция для парсинга HTML-тегов
+function parseHTML(html) {
+    const template = document.createElement('template');
+    template.innerHTML = html;
+    return template.content.textContent.trim();
 }
 
