@@ -83,16 +83,10 @@
                     "link": "<a href=\"https://fokifox.ru/games/rus/yume-nikki/\">Ссылка</a>"
                 }
             ],
-            "union_link": [
-                {
-                    "translator": "LivingFLCL",
-                    "link": "<a href=\"https://rpgmakerunion.ru/game/dnevnik-snovideniy.12786538\">Играть онлайн</a>"
-                },
-                {
-                    "translator": "fokifox",
-                    "link": " - "
-                }
-            ],
+            "union_link": {
+                "link": "<a href=\"https://rpgmakerunion.ru/game/dnevnik-snovideniy.12786538\">Играть онлайн</a>",
+                "type": "Скачать перевод"
+            },
             "download_links": [
                 {
                     "type": "Скачать (LivingFLCL)",
@@ -118,21 +112,5 @@
             ],
             "russian_localization": [
                 {
-                    "translator": "Horror Forge",
-                    "link": "<a href=\"https://livingflcl.eva-not-end.com/games/yume-nikki.html\">Ссылка</a>"
-                }
-            ],
-            "union_link": {
-                "link": "<a href=\"https://rpgmakerunion.ru/game/the-witchs-house.70192114\">Union</a>",
-                "type": "Скачать перевод"
-            },
-            "download_links": [
-                {
-                    "type": "Mediafire",
-                    "link": "<a href=\"https://disk.yandex.ru/d/zhSOXWt8CClQ4g\">Скачать MF</a>"
-                }
-            ],
-            "note": "Русский перевод устарел, неплохо бы обновить или перевести с нуля."
-        }
-    ]
-}
+                    "translator": "Hor
+
