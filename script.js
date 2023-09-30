@@ -45,3 +45,40 @@ function generateDownloadLinks(links) {
     return links.map(link => `<a href="${link.link}" target="_blank">${link.type}</a>`).join(', ');
 }
 
+// Добавьте слушатели событий для кнопок сортировки
+document.getElementById('sortTitle').addEventListener('click', () => {
+    sortTable('title');
+});
+
+document.getElementById('sortEngine').addEventListener('click', () => {
+    sortTable('engine');
+});
+
+// Функция для сортировки таблицы по выбранному столбцу
+function sortTable(columnName) {
+    const table = document.querySelector('table');
+    const tbody = table.querySelector('tbody');
+    const rows = Array.from(tbody.querySelectorAll('tr'));
+
+    // Сортируем строки таблицы
+    rows.sort((rowA, rowB) => {
+        const cellA = rowA.querySelector(`td:nth-child(${getColumnIndex(columnName)})`);
+        const cellB = rowB.querySelector(`td:nth-child(${getColumnIndex(columnName)})`);
+
+        return cellA.textContent.localeCompare(cellB.textContent);
+    });
+
+    // Удаляем существующие строки из таблицы
+    rows.forEach(row => tbody.removeChild(row));
+
+    // Добавляем отсортированные строки обратно в таблицу
+    rows.forEach(row => tbody.appendChild(row));
+}
+
+// Функция для получения индекса столбца по его имени
+function getColumnIndex(columnName) {
+    const headerRow = document.querySelector('thead tr');
+    const cells = Array.from(headerRow.querySelectorAll('th'));
+
+    return cells.findIndex(cell => cell.textContent === columnName);
+}
