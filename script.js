@@ -82,14 +82,3 @@ function getColumnIndex(columnName) {
 
     return cells.findIndex(cell => cell.textContent === columnName);
 }
-
-    rows.forEach(row => tbody.appendChild(row));
-}
-
-// Функция для получения индекса столбца по его имени
-function getColumnIndex(columnName) {
-    const headerRow = document.querySelector('thead tr');
-    const cells = Array.from(headerRow.querySelectorAll('th'));
-
-    return cells.findIndex(cell => cell.textContent === columnName);
-}
