@@ -47,11 +47,11 @@ function generateDownloadLinks(links) {
 
 // Добавьте слушатели событий для кнопок сортировки
 document.getElementById('sortTitle').addEventListener('click', () => {
-    sortTable('title');
+    sortTable('Название');
 });
 
 document.getElementById('sortEngine').addEventListener('click', () => {
-    sortTable('engine');
+    sortTable('Движок');
 });
 
 // Функция для сортировки таблицы по выбранному столбцу
@@ -72,6 +72,17 @@ function sortTable(columnName) {
     rows.forEach(row => tbody.removeChild(row));
 
     // Добавляем отсортированные строки обратно в таблицу
+    rows.forEach(row => tbody.appendChild(row));
+}
+
+// Функция для получения индекса столбца по его имени
+function getColumnIndex(columnName) {
+    const headerRow = document.querySelector('thead tr');
+    const cells = Array.from(headerRow.querySelectorAll('th'));
+
+    return cells.findIndex(cell => cell.textContent === columnName);
+}
+
     rows.forEach(row => tbody.appendChild(row));
 }
 
