@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     fetch('ru_data.json')
         .then(response => response.json())
         .then(data => {
-            console.log(data)
+            console.log(data);
             const tableBody = document.querySelector('tbody');
 
             // Проход по данным и создание строк таблицы
@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     <td>${game.title}</td>
                     <td>${game.engine}</td>
                     <td>${game.version}</td>
-                    <td>${parseHTML(game.game_info)}</td>
+                    <td><a href="${game.game_info}" target="_blank">Об игре</a></td>
                     <td>${generateLinks(game.foreign_localization)}</td>
                     <td>${generateLinks(game.russian_localization)}</td>
                     <td>${generateUnionLink(game.union_link)}</td>
@@ -29,7 +29,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Функция для генерации ссылок
 function generateLinks(links) {
-    return links.map(link => parseHTML(link.link)).join('<br>');
+    if (!links || links.length === 0) {
+        return '';
+    }
+    return links.map(link => `<a href="${link.link}" target="_blank">${link.translator}</a>`).join('<br>');
 }
 
 // Функция для генерации ссылки на Union
@@ -37,19 +40,15 @@ function generateUnionLink(unionLink) {
     if (unionLink.link === " — ") {
         return " — ";
     } else {
-        return parseHTML(unionLink.link);
+        return `<a href="${unionLink.link}" target="_blank">${unionLink.type}</a>`;
     }
 }
 
 // Функция для генерации ссылок на скачивание
 function generateDownloadLinks(links) {
-    return links.map(link => `${link.type}: ${parseHTML(link.link)}`).join('<br>');
-}
-
-// Функция для парсинга HTML-тегов
-function parseHTML(html) {
-    const template = document.createElement('template');
-    template.innerHTML = html;
-    return template.content.textContent.trim();
+    if (!links || links.length === 0) {
+        return '';
+    }
+    return links.map(link => `${link.type}: <a href="${link.link}" target="_blank">Скачать</a>`).join('<br>');
 }
 
