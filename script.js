@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     <td>${game.title}</td>
                     <td>${game.engine}</td>
                     <td>${game.version}</td>
-                    <td>${game.game_info}</td>
+                    <td><a href="${game.game_info}" target="_blank">Об игре</a></td>
                     <td>${generateLinks(game.foreign_localization)}</td>
                     <td>${generateLinks(game.russian_localization)}</td>
                     <td>${generateUnionLink(game.union_link)}</td>
