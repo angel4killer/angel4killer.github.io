@@ -50,3 +50,4 @@ function generateDownloadLinks(links) {
     }
     return links.map(link => `${link.type}: <a href="${link.link}" target="_blank">Скачать</a>`).join('<br>');
 }
+
