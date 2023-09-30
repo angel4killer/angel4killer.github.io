@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     fetch('ru_data.json')
         .then(response => response.json())
         .then(data => {
+            console.log(data)
             const tableBody = document.querySelector('tbody');
 
             // Проход по данным и создание строк таблицы
