@@ -35,7 +35,7 @@ function generateLinks(links) {
 // Функция для генерации ссылки на Union
 function generateUnionLink(unionLinks) {
     if (unionLinks) {
-        return unionLinks.map(unionLink => `<a href="${unionLink.link}" target="_blank">${unionLink.translator}</a>`).join('<br>');
+        return unionLinks.map(unionLink => `<a href="${unionLink.link}" target="_blank">${unionLink.type}</a>`).join('<br>');
     } else {
         return " — ";
     }
