@@ -29,19 +29,24 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Функция для генерации ссылок
 function generateLinks(links) {
+    if (!links || links.length === 0) {
+        return ''; // Возвращаем пустую строку, если нет ссылок
+    }
     return links.map(link => `<a href="${link.link}" target="_blank">${link.translator}</a>`).join('<br>');
 }
 
 // Функция для генерации ссылки на Union
 function generateUnionLink(unionLink) {
-    if (unionLink.link === " — ") {
-        return " — ";
-    } else {
-        return `<a href="${unionLink.link}" target="_blank">${unionLink.type}</a>`;
+    if (!unionLink || !unionLink.link) {
+        return ''; // Возвращаем пустую строку, если нет ссылки на Union
     }
+    return `<a href="${unionLink.link}" target="_blank">${unionLink.type}</a>`;
 }
 
 // Функция для генерации ссылок на скачивание
 function generateDownloadLinks(links) {
+    if (!links || links.length === 0) {
+        return ''; // Возвращаем пустую строку, если нет ссылок на скачивание
+    }
     return links.map(link => `${link.type}: <a href="${link.link}" target="_blank">Скачать</a>`).join('<br>');
 }
