@@ -37,7 +37,7 @@ function generateLinks(links) {
 
 // Функция для генерации ссылки на Union
 function generateUnionLink(unionLink) {
-    if (!unionLink || !unionLink.link) {
+    if (!unionLink || !unionLink.link || unionLink.link === " — ") {
         return ''; // Возвращаем пустую строку, если нет ссылки на Union
     }
     return `<a href="${unionLink.link}" target="_blank">${unionLink.type}</a>`;
