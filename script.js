@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded', function() {
     fetch('ru_data.json')
         .then(response => response.json())
         .then(data => {
-            console.log(data)
             const tableBody = document.querySelector('tbody');
 
             // Проход по данным и создание строк таблицы
@@ -29,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Функция для генерации ссылок
 function generateLinks(links) {
-    return links.map(link => link.link).join(', ');
+    return links.map(link => `<a href="${link.link}" target="_blank">${link.translator}</a>`).join(', ');
 }
 
 // Функция для генерации ссылки на Union
@@ -37,12 +36,12 @@ function generateUnionLink(unionLink) {
     if (unionLink.link === " — ") {
         return " — ";
     } else {
-        return unionLink.link;
+        return `<a href="${unionLink.link}" target="_blank">${unionLink.type}</a>`;
     }
 }
 
 // Функция для генерации ссылок на скачивание
 function generateDownloadLinks(links) {
-    return links.map(link => `${link.type}: ${link.link}`).join(', ');
+    return links.map(link => `<a href="${link.link}" target="_blank">${link.type}</a>`).join(', ');
 }
 
